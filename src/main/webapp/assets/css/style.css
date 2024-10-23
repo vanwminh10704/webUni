@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* reusable */
+h2{
+    color: red;
+}
+
+.row{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.btn{
+    color: #ffffff;
+    display: inline-block;
+    background-color: #00ADEF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* header */
+.logo_image{
+    width: 200px;
+}
+
+/* form  */
+form{
+    border: 1px solid #555555;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 0 #585858;
+    background-color: white;
+}
