@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+  	<servlet-name>helloSvl</servlet-name>
+  	<servlet-class>com.servlet.helloSvl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>helloSvl</servlet-name>
+  	<url-pattern>/helloSvl.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>getOrderForm</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.getOrderForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getOrderForm</servlet-name>
+  	<url-pattern>/getOrderForm.java</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>test405</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.test405</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test405</servlet-name>
+  	<url-pattern>/test405.java</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+  	<servlet-name>getInfor</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.getInfor</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>getInfor</servlet-name>
+  	<url-pattern>/getInfor.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>getInputData</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.getInputData</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>getInputData</servlet-name>
+  	<url-pattern>/getInputData.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editData</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.editData</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>editData</servlet-name>
+  	<url-pattern>/editData.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>confirmServlet</servlet-name>
+  	<servlet-class>com.servlet.learnGetAndEditData.confirmServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>confirmServlet</servlet-name>
+  	<url-pattern>/confirmServlet.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.servlet.useServlet.loginServlet</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/loginServlet.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>printListUser</servlet-name>
+  	<servlet-class>com.servlet.useServlet.printListUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>printListUser</servlet-name>
+  	<url-pattern>/printListUser.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registerServlet</servlet-name>
+  	<servlet-class>com.servlet.useServlet.registerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>registerServlet</servlet-name>
+  	<url-pattern>/registerServlet.java</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>getAndReadData</servlet-name>
+  	<servlet-class>com.servlet.useServlet.getAndReadData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getAndReadData</servlet-name>
+  	<url-pattern>/getAndReadData.java</url-pattern>
+  </servlet-mapping>
+  
+  <display-name>practiceWeb</display-name>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/getData_and_DefineEnrorHandling/404.jsp</location>
+  </error-page>
+	
+  <error-page>
+    <error-code>500</error-code>
+    <location>/getData_and_DefineEnrorHandling/500.jsp</location>
+  </error-page>
+  
+  <error-page>
+    <error-code>405</error-code>
+    <location>/getData_and_DefineEnrorHandling/405.jsp</location>
+  </error-page>  
+   
+   <error-page>
+    <exception-type>exceptions.ResourceNotFoundException</exception-type>
+    <location>/404.jsp</location>
+  </error-page>
+   
+  <servlet>
+  	<servlet-name>testvariable</servlet-name>
+  	<servlet-class>com.servlet.testvariable</servlet-class>
+  	<init-param>
+  	  <param-name>test</param-name>
+  	  <param-value>local variable value</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>testvariable</servlet-name>
+  	<url-pattern>/testvariable.java</url-pattern>
+  </servlet-mapping>
+  <context-param>
+        <param-name>name</param-name>
+        <param-value>Global Name Value</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+
+</web-app>

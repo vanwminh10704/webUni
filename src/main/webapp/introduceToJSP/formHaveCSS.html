@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../assets/css/grid.css">
+	<link rel="stylesheet" href="../assets/css/base.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<title>register</title>
+</head>
+
+<body>
+	<header>
+
+		<a href="#">
+			<img class="logo_image" src="../assets/img/logo_khoa.jpg" alt="logo brand">
+		</a>
+	</header>
+
+	<div class="row">
+		<div class="col span-1-of-2">
+			<form action="/usingServletwithJSP/inforConfirm.jsp">
+				<h2> Form điền thông tin khách hàng</h2>
+
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="name">Name</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="text" name="name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Email</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="text" name="email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="birthDay">Birthday</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="date" name="birthDay">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="gender">Gender:</label>
+
+					</div>
+					<div class="col span-2-of-3">
+						<label>
+							<input type="radio" name="gender" required>Female
+						</label>
+
+						<label>
+							<input type="radio" name="gender" required>Male
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Address</label>
+					</div>
+					<div class="col span-2-of-3">
+						<select name="Address">
+							<option name="address" value="" disabled selected>Chọn nơi ở</option>
+							<option name="address" value="HN">Hà Nội</option>
+							<option name="address" value="HP">Hải Phòng</option>
+							<option name="address" value="QN">Quảng Ninh</option>
+							<option name="address" value="Hue">Huế</option>
+							<option name="address" value="DN">Đà Nẵng</option>
+							<option name="address" value="DongNai">Đồng Nai</option>
+							<option name="address" value="TPHCM">TP Hồ Chí Minh</option>
+							<option name="address" value="CT">Cần Thơ</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Career</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Phương thức giao hàng</label>
+					</div>
+					<div class="col span-2-of-3">
+						<label for="">
+							<input type="checkbox" name="giaohang" value="nhà">
+							Tại nhà
+						</label>
+						<label for="">
+							<input type="checkbox" name="giaohang" value="cơ quan">
+							Tại cơ quan
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-2">
+						<input type="submit" class="btn" value="Send It">
+					</div>
+					<div class="col span-1-of-2">
+						<input type="reset" class="btn" value="Reset">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<h5>
+			<a href="https://www.facebook.com/profile.php?id=100077263994402&mibextid=ZbWKwL">Fullstack Shop</a>
+		</h5>
+	</footer>
+</body>
+
+</html>

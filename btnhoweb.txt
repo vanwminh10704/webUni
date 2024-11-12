@@ -1,0 +1,11 @@
+-- nhap data vao form sau đó bỏ qua servlet lấy dữ liệu r trả qua 1 cái form khác có thể sửa được 
+-- định nghĩa ra variable trong web.xml
+-- tạo ra trang error page: 3 trang error code 1 error type
+-- giờ sau kiểm tra hết tất cả bt trước đây22
+
+lấy thông tin từ form đăng ký của client-> bỏ vào csdl qua servlet
+-> lấy thông tin từ csdl lên jsp
+liệt kê user, thêm user trong database
+update user và tìm user bằng id dùng statement và preparedstatement
+tạo đăng ký đăng nhập trong 
+đọc được ds user, client

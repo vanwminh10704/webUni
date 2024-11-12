@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .first-table{
+            border: 2px solid;
+        }
+        .first-table tr td,
+        .first-table tr th {
+            width: 150px;
+            text-align: center;
+            font-size: 150%;
+        }
+        
+
+        .second-table tr td,
+        .second-table tr th {
+            width: 100px;
+            font-size: 80%;
+            text-align: center;
+        }
+
+        .image-container{
+            display: flex;
+            justify-content: center;
+        }
+        .image-item{
+            display: inline-flex;
+            justify-content: space-evenly;
+            
+        }
+        .image-item img{
+            width: 25rem;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table 1</h2>
+    <table class="first-table">
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th>point</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smit</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+        </tr>
+    </table>
+
+    <h3>table no border</h3>
+    <table class="second-table">
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th>point</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smit</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+        </tr>
+        <!-- tr: table row: các hàng trong bản
+            th: table header: phần tiêu đề đề của bảng -->
+    </table>
+    
+</body>
+
+</html>
